@@ -1,4 +1,10 @@
 $(document).ready(() => {
+
+    $('#dashboard').on('click', () => {
+        $.get('dashboard.html', e => {
+            $('#pagina').html(e);
+        })
+    })
     
     /*
     
